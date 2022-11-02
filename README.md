@@ -1,8 +1,9 @@
-# Math Magicians
+
+# Bookstore
 
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-"Math magicians" is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to:  make simple calculations and read a random math-related quote.
+The online bookstore delivery apps allow the book store owners and authors to sell or rent their books to people interested in reading them in return for money. Built with React and Redux.
 
 > Learning objectives
 
@@ -53,13 +54,13 @@ To get a local copy of this project up and running on your local machine follow 
 - Clone this repository or download the Zip folder:
 
 ```
-git clone https://github.com/AdnanOlarmmi/Math-Magicians.git
+git clone https://github.com/AdnanOlarmmi/Bookstore.git
 ```
 
 - Navigate to the location of the folder in your machine:
 
 
-**``you@your-Pc-name:~$ cd Math-Magicians``**
+**``you@your-Pc-name:~$ cd Bookstore``**
 
 ### Usage
 
@@ -109,7 +110,7 @@ npm start
 ## Contributing
 
 Contributions, issues, and feature requests are welcome!
-Feel free to check the [issues page](https://github.com/AdnanOlarmmi/Math-Magicians/issues).
+Feel free to check the [issues page](https://github.com/AdnanOlarmmi/Bookstore/issues).
 
 ## Show your support
 
@@ -125,3 +126,4 @@ Give a ⭐️ if you like this project and how we manage to build it!
 ## 📝 License
 
 This project is [MIT](./LICENSE) licensed
+
