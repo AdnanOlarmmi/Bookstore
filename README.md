@@ -16,11 +16,6 @@ The online bookstore delivery apps allow the book store owners and authors to se
 - Understand the mechanism of lifting state up.
 - Use React hooks.
 
-- Here is the preview
-<p>
- <img src="./preview.gif" />
-</p>
-
 ## Built With
 
 - HTML
@@ -41,8 +36,6 @@ To get a local copy of this project up and running on your local machine follow 
 
 ### Prerequisites
 
-- Basic html, css and medium Javascript know how.
-- Git installation
 - A text editor 
 - A terminal
 - A web browser to view output e.g Google Chrome
@@ -71,6 +64,7 @@ npm install
 - To get it running on your default browser and local host, run:
 ```
 npm start
+```
 
 ### Run Tests
 To track linter errors locally follow these steps:  
