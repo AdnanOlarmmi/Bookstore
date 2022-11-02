@@ -1,22 +1,19 @@
-/*eslint-disable */
 import React from 'react';
-import BooksContainer from './BooksContainer'
-import Categories from './Categories'
 import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Link,
 } from 'react-router-dom';
+import BooksContainer from './BooksContainer';
+import Categories from './Categories';
 
-const App = () => {
-    return(<Router>
+const App = () => (
+  <Router>
     <Routes>
-        <Route path="/" element={<BooksContainer />} />
-        <Route path="/categories" element={<Categories />} />
+      <Route path="/" element={<BooksContainer />} />
+      <Route path="/categories" element={<Categories />} />
     </Routes>
-    </Router>
-    )
-}
+  </Router>
+);
 
 export default App;
