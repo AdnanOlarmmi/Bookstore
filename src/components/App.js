@@ -10,7 +10,7 @@ import { configureStore } from '@reduxjs/toolkit';
 import bookReducer, { addBooks } from '../redux/books/books';
 
 const books = configureStore({
-  reducer: bookReducer,
+  reducer: {bookReducer},
 })
 
 console.log(books.getState());

@@ -1,13 +1,14 @@
-
+const ADD_BOOK = 'bookStore/books/ADD_BOOK';
+const REMOVE_BOOK = 'bookStore/books/REMOVE_BOOK';
 
 export const addBooks = () => ({
-        type: 'ADD_BOOK',
+        type: ADD_BOOK,
         id: 1,
         title: 'The Hunger Games',
 })
 
 export const removeBooks = (id) => ({
-        type: 'REMOVE_BOOK',
+        type: REMOVE_BOOK,
         id,
 })
 
