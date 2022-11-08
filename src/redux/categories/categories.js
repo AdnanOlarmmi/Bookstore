@@ -7,8 +7,10 @@ export const checkCategory = (id) => ({
 const categoryReducer = (state = [], action) => {
     switch(action.type) {
         case 'CHECK_CATEGORY':
-            return 'Not available at the moment'
+            return 'Under construction'
         default:
             return state
     }
 }
+
+export default categoryReducer;
