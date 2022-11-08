@@ -6,15 +6,8 @@ The online bookstore delivery apps allow the book store owners and authors to se
 
 > Learning objectives
 
-- Set up a React app.
-- Use React documentation.
-- Use React components.
-- Use React props.
-- Use React state.
-- Handle events in a React app.
-- Use React life cycle methods.
-- Understand the mechanism of lifting state up.
-- Use React hooks.
+- Understand the concept of state management.
+- Use store, actions, and reducers in React.
 
 ## Built With
 
@@ -22,6 +15,7 @@ The online bookstore delivery apps allow the book store owners and authors to se
 - CSS
 - JAVASCRIPT
 - REACT
+- REDUX
 
 ## Additional Tools
 
