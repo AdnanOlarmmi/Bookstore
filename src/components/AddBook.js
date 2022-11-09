@@ -30,7 +30,7 @@ const AddBook = () => {
         title: '',
         author:''})
     } else {
-      alert("Please write item")
+      alert("Please Input a Title and Author")
     }
   }
  
