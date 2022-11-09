@@ -1,3 +1,4 @@
+import initialBooks from "./initialBooks";
 const ADD_BOOK = 'bookStore/books/ADD_BOOK';
 const REMOVE_BOOK = 'bookStore/books/REMOVE_BOOK';
 
@@ -12,7 +13,7 @@ export const removeBooks = (id) => ({
   id,
 });
 
-const bookReducer = (state = [], action) => {
+const bookReducer = (state = initialBooks, action) => {
   switch (action.type) {
     case 'ADD_BOOk':
       return [
