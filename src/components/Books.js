@@ -1,6 +1,7 @@
 import React from 'react';
 import Book from './Book';
-
+import { Provider } from 'react-redux';
+import store from '../redux/configureStore';
 const Books = () => (
   <main>
     <ul>
@@ -10,5 +11,5 @@ const Books = () => (
     </ul>
   </main>
 );
-
+console.log(store.getState())
 export default Books;
