@@ -2,10 +2,9 @@ import initialBooks from "./initialBooks";
 const ADD_BOOK = 'bookStore/books/ADD_BOOK';
 const REMOVE_BOOK = 'bookStore/books/REMOVE_BOOK';
 
-export const addBook = () => ({
+export const addBook = (payLoad) => ({
   type: ADD_BOOK,
-  id: 1,
-  title: 'The Hunger Games',
+  payLoad,
 });
 
 export const removeBook = (id) => ({
@@ -19,8 +18,8 @@ const bookReducer = (state = initialBooks, action) => {
       return [
         ...state,
         {
-          id: action.id,
-          title: action.title,
+          id: action.payLoad.id,
+          title: action.payLoad.title,
         },
       ];
     case REMOVE_BOOK:
