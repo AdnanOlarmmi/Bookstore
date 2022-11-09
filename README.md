@@ -1,4 +1,4 @@
-# Bookstore
+# Bookstore: Use Redux in React components.
 
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
@@ -8,6 +8,9 @@ The online bookstore delivery apps allow the book store owners and authors to se
 
 - Understand the concept of state management.
 - Use store, actions, and reducers in React.
+- Understand the concept of state management.
+- Use store, actions and reducers in React.
+Connect React and Redux.
 
 ## Built With
 
@@ -55,27 +58,23 @@ git clone https://github.com/AdnanOlarmmi/Bookstore.git
 ```
 npm install
 ```
-- To get it running on your default browser and local host, run:
-```
-npm start
-```
 
 ### Run Tests
 To track linter errors locally follow these steps:  
 
-Track HTML linter errors run:
+- Track HTML linter errors run:
 ```
 npx hint .
 ```
-Track CSS linter errors run:
+- Track CSS linter errors run:
 ```
 npx stylelint "**/*.{css,scss}"
 ```
-Track JavaScript linter errors run:
+- Track JavaScript linter errors run:
 ```
 npx eslint .
 ```
-Start App on your default browser:
+- To get it running on your default browser and local host, run:
 ```
 npm start
 ```
