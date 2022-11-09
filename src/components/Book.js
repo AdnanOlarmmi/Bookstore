@@ -1,7 +1,15 @@
 import React from 'react';
+import { useDispatch } from 'react-redux';
+import { removeBook } from '../redux/books/books';
 
 const Book = (props) => {
-  const { title, author } = props;
+  const {id, title, author } = props.book;
+  const dispatch = useDispatch();
+  const onRemove = (e) => {
+    e.preventDefault();
+    dispatch(removeBook(id));
+  }
+ 
   return (
     <li>
       {title}
@@ -10,7 +18,7 @@ const Book = (props) => {
       {' '}
       {author}
       {' '}
-      <button type="submit">Remove</button>
+      <button type="submit" onClick={onRemove}>Remove</button>
     </li>
   );
 };

@@ -2,20 +2,20 @@ import initialBooks from "./initialBooks";
 const ADD_BOOK = 'bookStore/books/ADD_BOOK';
 const REMOVE_BOOK = 'bookStore/books/REMOVE_BOOK';
 
-export const addBooks = () => ({
+export const addBook = () => ({
   type: ADD_BOOK,
   id: 1,
   title: 'The Hunger Games',
 });
 
-export const removeBooks = (id) => ({
+export const removeBook = (id) => ({
   type: REMOVE_BOOK,
   id,
 });
 
 const bookReducer = (state = initialBooks, action) => {
   switch (action.type) {
-    case 'ADD_BOOk':
+    case ADD_BOOK:
       return [
         ...state,
         {
@@ -23,7 +23,7 @@ const bookReducer = (state = initialBooks, action) => {
           title: action.title,
         },
       ];
-    case 'REMOVE_BOOK':
+    case REMOVE_BOOK:
       return state.filter((book) => book.id !== action.id);
     default:
       return state;

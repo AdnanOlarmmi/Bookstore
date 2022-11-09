@@ -1,16 +1,19 @@
 import React from 'react';
 import Book from './Book';
-import { Provider } from 'react-redux';
-import store from '../redux/configureStore';
-const Books = () => (
-  <Provider store={store}>
+import { useSelector } from 'react-redux';
+
+const Books = () => {
+  const books = useSelector((state) => state.books);
+  
+  return (
   <main>
     <ul>
-      {store.getState().books.map((book) => {
-        return (<Book key={book.id} title={book.title } author={book.author} />)})}
+      {books.map((book) => {
+        return (<Book key={book.id} book={book} />)})}
     </ul>
   </main>
-  </Provider>
-);
-console.log(store.getState().books)
+)
+};
+
+
 export default Books;
