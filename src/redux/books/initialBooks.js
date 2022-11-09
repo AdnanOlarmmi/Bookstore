@@ -1,11 +1,13 @@
+import { v4 as uuidv4 } from 'uuid';
+
 const initialBooks = [
     {
-        id: 1,
+        id: uuidv4(),
         author: 'The Hunger',
         title: 'The Hunger Games',
     },
     {
-        id: 1,
+        id: uuidv4(),
         author: 'The Games',
         title: 'The Hunger Games',
     }

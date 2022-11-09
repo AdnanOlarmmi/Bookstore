@@ -3,13 +3,14 @@ import Book from './Book';
 import { Provider } from 'react-redux';
 import store from '../redux/configureStore';
 const Books = () => (
+  <Provider store={store}>
   <main>
     <ul>
-      <Book title="My book" author="Adnan" />
-      <Book title="Your book" author="Musa" />
-      <Book title="Our book" author="Ismail" />
+      {store.getState().books.map((book) => {
+        return (<Book key={book.id} title={book.title } author={book.author} />)})}
     </ul>
   </main>
+  </Provider>
 );
-console.log(store.getState())
+console.log(store.getState().books)
 export default Books;
