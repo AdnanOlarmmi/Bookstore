@@ -1,10 +1,10 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { removeBook } from '../redux/books/books';
-import { deleteBook } from '../redux/books/books';
+import { removeBook, deleteBook } from '../redux/books/books';
 
 const Book = (props) => {
   const { book } = props;
+  //eslint-disable-next-line
   const { item_id, title, author } = book;
   const dispatch = useDispatch();
   const onRemove = (e) => {

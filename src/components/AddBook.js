@@ -36,7 +36,6 @@ const AddBook = () => {
     } else {
       alert('Please Input a Title and Author');
     }
-    
   };
 
   return (
