@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
 import { addBook } from '../redux/books/books';
-import action from '../redux/books/action';
 
 const AddBook = () => {
   const [inputText, setInputText] = useState({
@@ -27,7 +26,7 @@ const AddBook = () => {
   const onAdd = (e) => {
     e.preventDefault();
     if (inputText.title.trim() && inputText.author.trim()) {
-      dispatch(action(newBook));
+      dispatch(addBook(newBook));
       setInputText({
         title: '',
         author: '',
@@ -35,6 +34,7 @@ const AddBook = () => {
     } else {
       alert('Please Input a Title and Author');
     }
+    
   };
 
   return (

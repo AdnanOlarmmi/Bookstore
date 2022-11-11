@@ -1,14 +1,14 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { checkCategory } from '../redux/categories/categories';
+import { category } from '../redux/categories/categories';
 
 const Categories = () => {
-  const categories = useSelector((state) => state.categories);
+  const categories = useSelector((state) => state.categorySlice);
 
   const dispatch = useDispatch();
   const onCheck = (e) => {
     e.preventDefault();
-    dispatch(checkCategory());
+    dispatch(category());
   };
 
   return (

@@ -1,33 +1,18 @@
-import initialBooks from './initialBooks';
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+import initialState from './initialState';
 
-const ADD_BOOK = 'bookStore/books/ADD_BOOK';
-const REMOVE_BOOK = 'bookStore/books/REMOVE_BOOK';
 
-export const addBook = (payLoad) => ({
-  type: ADD_BOOK,
-  payLoad,
-});
-
-export const removeBook = (id) => ({
-  type: REMOVE_BOOK,
-  id,
-});
-
-const bookReducer = (state = initialBooks, action) => {
-  switch (action.type) {
-    case ADD_BOOK:
-      return [
-        ...state,
-        {
-          id: action.payLoad.id,
-          title: action.payLoad.title,
+const bookSlice = createSlice({
+    name: 'books',
+    initialState,
+    reducers: {
+        addBook: (state, action) => {
+           state.push(action.payload);
         },
-      ];
-    case REMOVE_BOOK:
-      return state.filter((book) => book.id !== action.id);
-    default:
-      return state;
-  }
-};
+        removeBook: (state, action) =>  state.filter((book) => book.id !== action.payload)
+        
+    }
+})
 
-export default bookReducer;
+export const { addBook, removeBook } = bookSlice.actions;
+export default bookSlice.reducer;

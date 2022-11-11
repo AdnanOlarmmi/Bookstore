@@ -9,6 +9,7 @@ const Book = (props) => {
   const onRemove = (e) => {
     e.preventDefault();
     dispatch(removeBook(id));
+    removeBook(id)
   };
 
   return (
