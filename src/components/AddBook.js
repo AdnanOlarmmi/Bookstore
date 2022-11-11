@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
-import { addBook } from '../redux/books/books';
+import { addBook, postNewBook } from '../redux/books/books';
 
 const AddBook = () => {
   const [inputText, setInputText] = useState({
@@ -17,9 +17,10 @@ const AddBook = () => {
   };
 
   const newBook = {
-    id: uuidv4(),
+    item_id: uuidv4(),
     title: inputText.title,
     author: inputText.author,
+    category: 'Fiction',
   };
 
   const dispatch = useDispatch();
@@ -27,6 +28,7 @@ const AddBook = () => {
     e.preventDefault();
     if (inputText.title.trim() && inputText.author.trim()) {
       dispatch(addBook(newBook));
+      dispatch(postNewBook(newBook));
       setInputText({
         title: '',
         author: '',
