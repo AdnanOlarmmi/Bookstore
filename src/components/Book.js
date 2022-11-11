@@ -1,15 +1,16 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { removeBook } from '../redux/books/books';
+import { deleteBook } from '../redux/books/books';
 
 const Book = (props) => {
   const { book } = props;
-  const { id, title, author } = book;
+  const { item_id, title, author } = book;
   const dispatch = useDispatch();
   const onRemove = (e) => {
     e.preventDefault();
-    dispatch(removeBook(id));
-    removeBook(id)
+    dispatch(removeBook(item_id));
+    dispatch(deleteBook(item_id));
   };
 
   return (
