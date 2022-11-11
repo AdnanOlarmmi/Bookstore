@@ -1,7 +1,4 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import apiURL from '../../api/config';
-// import axios from 'axios';
-// import initialState from './initialState';
 import getBooks from '../../api/getBooks';
 import postBook from '../../api/postBook';
 import apiDeleteBook from '../../api/deleteBook';
