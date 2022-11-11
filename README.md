@@ -10,7 +10,11 @@ The online bookstore delivery apps allow the book store owners and authors to se
 - Use store, actions, and reducers in React.
 - Understand the concept of state management.
 - Use store, actions and reducers in React.
-Connect React and Redux.
+- Connect React and Redux.
+- Understand the concept of state management.
+- Use store, actions and reducers in React.
+- Connect React and Redux.
+- Connect an existing API via Redux and use the data to display something in a UI.
 
 ## Built With
 

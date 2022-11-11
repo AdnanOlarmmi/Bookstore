@@ -4,7 +4,7 @@ import { removeBook, deleteBook } from '../redux/books/books';
 
 const Book = (props) => {
   const { book } = props;
-  //eslint-disable-next-line
+  // eslint-disable-next-line
   const { item_id, title, author } = book;
   const dispatch = useDispatch();
   const onRemove = (e) => {
