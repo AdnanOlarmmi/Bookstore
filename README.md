@@ -19,6 +19,12 @@ The online bookstore delivery apps allow the book store owners and authors to se
 - Use store, actions and reducers in React.
 - Connect React and Redux.
 Apply React best practices and language style guides in code.
+
+- Here is the preview
+<p>
+ <img src="./preview.gif" />
+</p>
+
 ## Built With
 
 - HTML
