@@ -42,7 +42,7 @@ Apply React best practices and language style guides in code.
 
 ## Live Demo
 
-- [Here](https://deploy-preview-6--tourmaline-scone-8cd84c.netlify.app/) is the live preview.
+- [Here](https://tourmaline-scone-8cd84c.netlify.app/) is the live preview.
 
 ## Getting Started
 
