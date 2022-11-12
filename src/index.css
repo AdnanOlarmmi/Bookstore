@@ -190,8 +190,7 @@ h1 {
   margin-bottom: 1rem;
 }
 
-.chapterProgress,
-.addButton {
+button {
   background-color: #0290ff;
   border: transparent;
   padding: 1em;
@@ -219,4 +218,20 @@ form select {
   margin-top: 2rem;
   padding-top: 2rem;
   border-top: 2px solid #cdcbd0;
+}
+
+.categories {
+  width: 70vw;
+  max-width: 500px;
+  height: max-content;
+  max-height: 90vh;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0.05rem 0.05rem 5px rgb(108, 108, 108);
+  border-radius: 5px;
+  font-weight: 550;
+  padding: 1rem;
+  text-align: center;
 }
