@@ -40,6 +40,10 @@ Apply React best practices and language style guides in code.
 - ESlint
 - Node Packet Manager
 
+## Live Demo
+
+- [Here](https://deploy-preview-6--tourmaline-scone-8cd84c.netlify.app/) is the live preview.
+
 ## Getting Started
 
 To get a local copy of this project up and running on your local machine follow the steps below.
