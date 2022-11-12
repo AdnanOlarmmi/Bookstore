@@ -6,14 +6,13 @@
   margin: 0;
 }
 
-body,
-.bookCategory {
+body {
   background-color: #e8e8e8;
   font-family: Montserrat, Alternates, sans-serif;
 }
 
 header {
-  padding: 2rem;
+  padding: 2rem 5rem;
   background-color: #fff;
 }
 
@@ -38,6 +37,7 @@ h1 {
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
+  margin-left: -1rem;
 }
 
 .flex-row {
@@ -57,9 +57,8 @@ h1 {
 }
 
 .container {
-  max-width: 1200px;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 2rem 5rem;
 }
 
 .booksContainer {
@@ -69,18 +68,40 @@ h1 {
 
 .book {
   background-color: #fff;
-  padding: 1rem;
+  padding: 1.5rem;
+  border: 2px solid #e8e8e8;
   border-radius: 0.5rem;
-  box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.1);
-  font-family: RoboSlab, Alternates, sans-serif;
+  font-family: "Roboto Slab", 'Alternates', sans-serif;
+}
+
+.bookCategory {
+  color: #898989;
+  margin-bottom: 1rem;
+}
+
+.bookTitle {
+  font-size: x-large;
+  font-weight: bolder;
+  text-transform: capitalize;
+}
+
+.bookAuthor {
+  text-transform: capitalize;
+  color: #1e51dc;
+}
+
+.actions {
+  margin-top: 2rem;
 }
 
 .actions li {
   cursor: pointer;
+  padding-right: 1rem;
+  color: #1e51dc;
 }
 
 .actions li + li {
-  border-left: 2px solid black;
+  border-left: 2px solid #cdcbd0;
   padding-left: 1rem;
 }
 
@@ -89,7 +110,6 @@ h1 {
 }
 
 .circle-wrap {
-  margin: 150px auto;
   width: 150px;
   height: 150px;
   background: #e8e8e8;
@@ -156,7 +176,34 @@ h1 {
   gap: 1rem;
 }
 
+.chapter {
+  border-left: 1px solid #cdcbd0;
+  padding-left: 4rem;
+  font-family: "Roboto Slab", 'Alternates', sans-serif;
+}
+
 .completed,
 .currentChapter {
   color: #cdcbd0;
+}
+
+.chapterNumber {
+  margin-top: 0.5rem;
+}
+
+.chapterProgress,
+.addButton {
+  background-color: #0290ff;
+  border: transparent;
+  padding: 1em;
+  color: #fff;
+  margin-top: 1rem;
+}
+
+form input {
+  background: #fff;
+  border: 1px solid #cdcbd0;
+  outline: none;
+  font-size: 1rem;
+  padding: 0.7rem;
 }

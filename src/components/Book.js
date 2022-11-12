@@ -18,9 +18,11 @@ const Book = (props) => {
   return (
     <li className='book flex-row'>
       <div className='bookInfo'>
-      <span id='bookCategory'>{category}</span>
-      <span id='bookTitle'>{title}</span>
-      <span id='bookAuthor'>{author}</span>
+      <div className='flex-column'>
+      <span className='bookCategory'>{category}</span>
+      <span className='bookTitle'>{title}</span>
+      <span className='bookAuthor'>{author}</span>
+      </div>
       <ul className='actions flex-row'>
         <li>Comments</li>
         <li  onClick={onRemove}>Remove</li>

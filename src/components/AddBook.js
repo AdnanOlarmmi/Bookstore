@@ -44,7 +44,6 @@ const AddBook = () => {
     <form className='addBook'>
       <input type="text" placeholder="Book title" name="title" onChange={onChange} value={inputText.title} />
       <input type="text" placeholder="Author name" name="author" onChange={onChange} value={inputText.author} />
-      <button type="submit" onClick={onAdd}>Add Book</button>
     <select name="category" id="category" onChange={onChange}>
     <option value=''>Category</option>
     <option value='Fiction'>Fiction</option>
@@ -54,6 +53,7 @@ const AddBook = () => {
     <option value='Self Help'>Self Help</option>
     <option value='History'>History</option>
     </select>
+    <button className='addButton' type="submit" onClick={onAdd}>Add Book</button>
     </form>
   );
 };
