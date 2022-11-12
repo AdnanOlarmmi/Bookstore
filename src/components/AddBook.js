@@ -7,6 +7,7 @@ const AddBook = () => {
   const [inputText, setInputText] = useState({
     title: '',
     author: '',
+    category: '',
   });
 
   const onChange = (e) => {
@@ -20,29 +21,39 @@ const AddBook = () => {
     item_id: uuidv4(),
     title: inputText.title,
     author: inputText.author,
-    category: 'Fiction',
+    category: inputText.category,
   };
 
   const dispatch = useDispatch();
   const onAdd = (e) => {
     e.preventDefault();
-    if (inputText.title.trim() && inputText.author.trim()) {
+    if (inputText.title.trim() && inputText.author.trim() && inputText.category.trim() ) {
       dispatch(addBook(newBook));
       dispatch(postNewBook(newBook));
       setInputText({
         title: '',
         author: '',
+        category: '',
       });
     } else {
-      alert('Please Input a Title and Author');
+      alert('Please Input a Title, Author and Category');
     }
   };
 
   return (
-    <form>
+    <form className='addBook'>
       <input type="text" placeholder="Book title" name="title" onChange={onChange} value={inputText.title} />
       <input type="text" placeholder="Author name" name="author" onChange={onChange} value={inputText.author} />
       <button type="submit" onClick={onAdd}>Add Book</button>
+    <select name="category" id="category" onChange={onChange}>
+    <option value=''>Category</option>
+    <option value='Fiction'>Fiction</option>
+    <option value='Comedy'>Comedy</option>
+    <option value='Action'>Action</option>
+    <option value='Finance'>Finance</option>
+    <option value='Self Help'>Self Help</option>
+    <option value='History'>History</option>
+    </select>
     </form>
   );
 };

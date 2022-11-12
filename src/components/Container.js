@@ -2,11 +2,11 @@ import React from 'react';
 import AddBook from './AddBook';
 import Books from './Books';
 
-const BooksContainer = () => (
-  <div>
-    <AddBook />
+const Container = () => (
+  <div className='flex-column container'>
     <Books />
+    <AddBook />
   </div>
 );
 
-export default BooksContainer;
+export default Container;
