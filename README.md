@@ -15,6 +15,15 @@ The online bookstore delivery apps allow the book store owners and authors to se
 - Use store, actions and reducers in React.
 - Connect React and Redux.
 - Connect an existing API via Redux and use the data to display something in a UI.
+- Understand the concept of state management.
+- Use store, actions and reducers in React.
+- Connect React and Redux.
+Apply React best practices and language style guides in code.
+
+- Here is the preview
+<p>
+ <img src="./preview.gif" />
+</p>
 
 ## Built With
 
@@ -30,6 +39,10 @@ The online bookstore delivery apps allow the book store owners and authors to se
 - Stylelint
 - ESlint
 - Node Packet Manager
+
+## Live Demo
+
+- [Here](https://deploy-preview-6--tourmaline-scone-8cd84c.netlify.app/) is the live preview.
 
 ## Getting Started
 
