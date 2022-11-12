@@ -13,7 +13,7 @@ const Books = () => {
   const books = useSelector((state) => state.bookSlice.books);
   return (
     <main>
-      <ul className='booksContainer flex-column'>
+      <ul className="booksContainer flex-column">
         {books.map((book) => (<Book key={book.item_id} book={book} />))}
       </ul>
     </main>

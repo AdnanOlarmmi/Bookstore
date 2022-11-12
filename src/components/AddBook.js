@@ -27,7 +27,7 @@ const AddBook = () => {
   const dispatch = useDispatch();
   const onAdd = (e) => {
     e.preventDefault();
-    if (inputText.title.trim() && inputText.author.trim() && inputText.category.trim() ) {
+    if (inputText.title.trim() && inputText.author.trim() && inputText.category.trim()) {
       dispatch(addBook(newBook));
       dispatch(postNewBook(newBook));
       setInputText({
@@ -41,22 +41,22 @@ const AddBook = () => {
   };
 
   return (
-    <form className='addBook flex-column'>
-      <h5 id='addHeading'>ADD NEW BOOK</h5>
-      <div className='addform flex-row'>
-      <input type="text" placeholder="Book title" name="title" onChange={onChange} value={inputText.title} />
-      <input type="text" placeholder="Author name" name="author" onChange={onChange} value={inputText.author} />
-    <select name="category" id="category" onChange={onChange}>
-    <option value=''>Category</option>
-    <option value='Fiction'>Fiction</option>
-    <option value='Comedy'>Comedy</option>
-    <option value='Action'>Action</option>
-    <option value='Finance'>Finance</option>
-    <option value='Self Help'>Self Help</option>
-    <option value='History'>History</option>
-    </select>
-    <button className='addButton' type="submit" onClick={onAdd}>Add Book</button>
-    </div>
+    <form className="addBook flex-column">
+      <h5 id="addHeading">ADD NEW BOOK</h5>
+      <div className="addform flex-row">
+        <input type="text" placeholder="Book title" name="title" onChange={onChange} value={inputText.title} />
+        <input type="text" placeholder="Author name" name="author" onChange={onChange} value={inputText.author} />
+        <select name="category" id="category" onChange={onChange}>
+          <option value="">Category</option>
+          <option value="Fiction">Fiction</option>
+          <option value="Comedy">Comedy</option>
+          <option value="Action">Action</option>
+          <option value="Finance">Finance</option>
+          <option value="Self Help">Self Help</option>
+          <option value="History">History</option>
+        </select>
+        <button className="addButton" type="submit" onClick={onAdd}>Add Book</button>
+      </div>
     </form>
   );
 };

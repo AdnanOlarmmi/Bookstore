@@ -1,3 +1,4 @@
+/*eslint-disable */
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { removeBook, deleteBook } from '../redux/books/books';
@@ -14,20 +15,20 @@ const Book = (props) => {
     dispatch(removeBook(item_id));
     dispatch(deleteBook(item_id));
   };
-
+  // eslint-disable-next-line
   return (
-    <li className='book flex-row'>
-      <div className='bookInfo'>
-      <div className='flex-column'>
-      <span className='bookCategory'>{category}</span>
-      <span className='bookTitle'>{title}</span>
-      <span className='bookAuthor'>{author}</span>
-      </div>
-      <ul className='actions flex-row'>
-        <li>Comments</li>
-        <li  onClick={onRemove}>Remove</li>
-        <li>Edit</li>
-      </ul>
+    <li className="book flex-row">
+      <div className="bookInfo">
+        <div className="flex-column">
+          <span className="bookCategory">{category}</span>
+          <span className="bookTitle">{title}</span>
+          <span className="bookAuthor">{author}</span>
+        </div>
+        <ul className="actions flex-row">
+          <li>Comments</li>
+          <li onClick={onRemove}>Remove</li>
+          <li>Edit</li>
+        </ul>
       </div>
       <Circle />
       <Chapter />
