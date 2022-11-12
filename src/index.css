@@ -105,8 +105,19 @@ h1 {
   padding-left: 1rem;
 }
 
-.addBook {
-  margin-top: 4.5rem;
+#addHeading {
+  color: #888;
+}
+
+.mask .fill {
+  clip: rect(0, 75px, 150px, 0);
+  background-color: #227ded;
+}
+
+.mask.full,
+.circle .fill {
+  animation: fill ease-in-out 3s;
+  transform: rotate(135deg);
 }
 
 .circle-wrap {
@@ -126,7 +137,7 @@ h1 {
 }
 
 .circle-wrap .circle .mask {
-  clip: rect(0px, 150px, 150px, 75px);
+  clip: rect(0, 150px, 150px, 75px);
 }
 
 .circle-wrap .inside-circle {
@@ -145,24 +156,11 @@ h1 {
   font-size: 2em;
 }
 
-/* color animation */
-
-/* 3rd progress bar */
-.mask .fill {
-  clip: rect(0px, 75px, 150px, 0px);
-  background-color: #227ded;
-}
-
-.mask.full,
-.circle .fill {
-  animation: fill ease-in-out 3s;
-  transform: rotate(135deg);
-}
-
-@keyframes fill{
+@keyframes fill {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(135deg);
   }
@@ -189,6 +187,7 @@ h1 {
 
 .chapterNumber {
   margin-top: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .chapterProgress,
@@ -197,13 +196,27 @@ h1 {
   border: transparent;
   padding: 1em;
   color: #fff;
-  margin-top: 1rem;
 }
 
-form input {
+form input,
+form select {
   background: #fff;
   border: 1px solid #cdcbd0;
   outline: none;
   font-size: 1rem;
   padding: 0.7rem;
+}
+
+.addform {
+  gap: 0.5rem;
+}
+
+.addform input {
+  flex-basis: 40%;
+}
+
+.addBook {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 2px solid #cdcbd0;
 }

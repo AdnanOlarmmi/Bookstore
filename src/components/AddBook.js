@@ -41,7 +41,9 @@ const AddBook = () => {
   };
 
   return (
-    <form className='addBook'>
+    <form className='addBook flex-column'>
+      <h5 id='addHeading'>ADD NEW BOOK</h5>
+      <div className='addform flex-row'>
       <input type="text" placeholder="Book title" name="title" onChange={onChange} value={inputText.title} />
       <input type="text" placeholder="Author name" name="author" onChange={onChange} value={inputText.author} />
     <select name="category" id="category" onChange={onChange}>
@@ -54,6 +56,7 @@ const AddBook = () => {
     <option value='History'>History</option>
     </select>
     <button className='addButton' type="submit" onClick={onAdd}>Add Book</button>
+    </div>
     </form>
   );
 };
